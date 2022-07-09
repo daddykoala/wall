@@ -1,0 +1,5 @@
+%syntax-version=1.0.0
+%project=wall_sqitch
+
+1_createTable 2022-07-09T13:07:05Z student  <moretticlement@outlook.fr> # création des tables
+2_addindex 2022-07-09T16:31:17Z student  <moretticlement@outlook.fr> # Ajout index
