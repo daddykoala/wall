@@ -3,11 +3,25 @@ const datamapper = require ("./datamapper");
 
 
 class User {
-    constructor () {}
+
+    firstname;
+    lastname;
+    email;
+    password;
+
+    constructor (obj) {
+
+    this.firstname = obj.firstname;
+    this.lastname = obj.lastname;
+    this.email = obj.email;
+    this.password = obj.password;
+
+    }
     super ()
 
-    
-    async createUser (body,_) {
+    async create (obj, res) {
+
+        const body = obj ;
 
         const user = await datamapper.insertUser(body)
 
@@ -15,4 +29,6 @@ class User {
 
 };
 
-module.export = User ; 
+    
+
+module.exports = User ; 

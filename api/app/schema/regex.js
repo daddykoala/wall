@@ -4,4 +4,4 @@ function pattern () {
     validator(patternMail)
 };
 
-module.export = pattern;
+module.exports = pattern;
